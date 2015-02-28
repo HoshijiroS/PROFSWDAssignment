@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>animate demo</title>
+  <style>
+  
+  .block {
+    position: relative;
+    width: 600px;
+    height: 400px;
+	margin: auto;
+	background-image: url('yuzu5.jpg');
+	background-size: 600px 400px;
+  }
+  
+  .container {
+		position: relative;
+		text-align: center;
+	}
+	
+	.footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 70px;
+		background-color: black;
+		width: 100%;
+	}
+	
+	.text{
+		position: relative;
+		top: 100px;
+		float: bottom;
+	}
+	
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 70px;
+		background-color: black;
+		width: 100%;
+	}
+	
+	.fill{
+		padding: 10px 10px;
+	}
+	
+	.boxContainer{
+		position: relative;
+		top: 100px;
+		margin:auto;
+	}
+  
+  </style>
+   <script src= "C:\Libraries\jquery-2.1.3.min.js"></script>
+</head>
+<body>
+ <div class = 'container'>
+	<div class = 'boxContainer'>
+		<button id="left">&laquo;</button>
+		<button id="right">&raquo;</button>
+		<div class="block" id = 'derpBox'></div>
+		 
+		<script>
+		var photos = ["yuzu1.jpg", "yuzu2.jpg", "yuzu3.jpg", "yuzu4.jpg", "yuzu5.jpg"];
+		var count = 0;
+		
+		$( "#right" ).click(function() {
+			if(count >= photos.length)
+				count = 0;
+			$('#derpBox').fadeIn(1000);
+			document.getElementById('derpBox').style.backgroundImage = 'url(' + photos[count] + ')';
+			count++;
+
+		});
+		 
+		$( "#left" ).click(function(){
+			if (count < 0)
+				count = 3;
+			$('#derpBox').fadeIn(1000);
+			document.getElementById('derpBox').style.backgroundImage = 'url(' + photos[count] + ')';
+			count--;
+		});
+		</script>
+	</div>
+	<div class = 'text'><font color = 'black'>Lorem ipsum dolor sit amet, no sit elit appetere, quo vidit natum deleniti ut, qui quando platonem moderatius et. Ut usu postea mollis. Detraxit dissentiet intellegebat ei ius, tamquam integre no per, et zril oportere assentior cum. Ei sit maiestatis voluptatum, nostrud consectetuer ad sed.
+
+Illum ullum nostrum pri an, sit veniam denique ad, cu fugit repudiandae quo. Ea duo quis tollit, duo et primis denique tacimates. Ea mel simul numquam percipitur, ei tritani voluptaria duo, ei vel vide molestie ponderum. Fugit utinam disputationi no nec, iudico rationibus mea ei. In eum essent blandit intellegat. Veri feugiat est eu, doctus denique facilisi vis id.
+
+Id nec enim probatus moderatius. Vel ei eripuit euismod sententiae, viris malorum mel an. Te mel amet debitis noluisse. Nec ea errem dolor, nulla oratio tibique eu vis. Ut postea nominati vix. An iriure accusata constituto nam.
+
+Qui ut alia veritus, eum no nostro gloriatur. Qui at quis aliquam epicurei, mei te malorum constituto. Pro sale meis intellegat et. Inermis iudicabit at est.
+
+Sed timeam tacimates interesset et. Duo ad electram concludaturque, sea at magna laudem ullamcorper. Ei disputationi conclusionemque has, ei agam omnis mentitum sea. Offendit dissentias ne has.
+
+Mei labitur omittantur ut. Ad commune neglegentur usu, mea ne wisi tation. Ut sit dico saepe postea. Ne nam dolor clita docendi, affert feugiat invenire no ius, pro possit urbanitas deterruisset no. Nisl assum persius quo cu, solum idque regione in eam. Sumo veri natum eu eum.
+
+Quod praesent ea mel. Utamur interesset te per, in cibo dicant usu. Eos et elitr splendide. Quaestio consulatu prodesset nec ex.
+
+Eu errem saepe elaboraret ius. Ne labitur feugiat similique sed, ei aperiri detraxit sapientem eum, tale luptatum vulputate in eam. Iudico laudem persecuti cu sea. Id est minim consul, at vis commodo menandri, sit ea summo fastidii. Per quot ceteros eleifend ad, et clita contentiones per.
+
+Et mel natum possim, mel ei eius denique. Mei ut veri ancillae. In nec quem recteque omittantur, est ex sumo porro volutpat, pri ne senserit laboramus. Error habemus fastidii pri te. Cum te nominati signiferumque. Eu dolorum oportere expetenda est, agam justo at sea.
+
+Ei sanctus democritum has, no sit appetere explicari, sint quot alienum ex sed. Nam appetere volutpat complectitur ne, cum feugiat assueverit cu. Homero iuvaret mel eu. Ad ludus percipit disputationi pro, eum ut sanctus tractatos. Sea solum omnes dictas ex, no est assum aeque apeirian.
+
+Congue utinam duo ne, ad per erat detracto euripidis. Eu quo choro aliquam. Ex dico tamquam definiebas has, libris qualisque ea eam, at tota probo graeco pri. Ne per nihil delicata senserit, pri integre vocibus ei. Quis iriure eu usu, ei his vide ipsum meliore.
+
+His alia singulis necessitatibus ne, te has mentitum vituperata scriptorem. Ne erat invenire reprehendunt vix, et vis omittam qualisque. Animal iudicabit sententiae cum ut, in vel saepe utamur copiosae. Utroque singulis inimicus mea ad, ea quo duis legendos appellantur, ex his malis dicat aliquid.
+
+An unum assum facilisis mei. Ne bonorum nonumes platonem vel. An magna alterum vix. Aperiam appetere dissentiet mei ad, per in hinc dicat. Iracundia scriptorem an pro. Semper aliquip neglegentur ad mei.
+
+Omnesque vivendum est at, an praesent adolescens sea, nostrud salutatus vituperata in sit. Ei sed esse cibo persecuti, agam mandamus consequuntur his cu. Duis fabulas at his, quas vituperata at eum, id elitr eirmod impetus vim. Tale cetero probatus nam cu. Est illum altera comprehensam ne, est in ignota insolens consulatu.
+
+Malorum maiorum lucilius nec cu. Sea te adhuc facilis corpora, quem dolor indoctum et pro. Tempor audire oportere has ut, sed eu nominavi abhorreant contentiones. No brute accusam sea. At docendi nominavi intellegebat nec, te nam legimus accumsan oportere. Et per exerci oporteat legendos, et quo ullum tractatos definitiones, tation maluisset mnesarchum vis ex.
+
+His cu decore altera ponderum, ex per veniam complectitur. Wisi fastidii officiis id sed, ad eos omnes solet possit, dicta doctus singulis in usu. Omnes possit gloriatur et sit, ut sint molestiae contentiones per. Ne qui affert accusamus ullamcorper, sit ad cetero tractatos philosophia.
+
+Ex justo malis indoctum mei, an melius scripta usu, malis munere sententiae usu et. Libris corpora vim an. His at esse admodum, ne viderer quaestio posidonium vim. Ad saperet delectus similique eum, labore feugiat pro cu. Sit id sumo laboramus liberavisse, sed cu velit novum complectitur. Ut mea falli choro quaestio, graeci nostrud vis cu. Ut vel unum forensibus.
+
+In posse consul luptatum usu, audiam sadipscing definitionem nam ei. Cum te probo omnis clita, mei cu nisl nobis scribentur. Vide democritum cum et. Qui ea posse sapientem, te sea novum paulo. Porro latine laboramus in eum, mundi voluptatum temporibus ad vis, sit et eripuit vivendum convenire. Id quo sint pertinax electram.
+
+Has an dicta vivendo. Mel etiam ridens ancillae cu, no atqui putant prompta vel. Ei pri veniam ubique propriae, eu nisl molestiae urbanitas eam, per vitae aliquid principes an. In dico movet sit, nec impetus viderer corpora ea. No populo propriae adipiscing eum, prima doming voluptatibus his ut, at bonorum elaboraret qui.
+
+Id equidem laboramus vis. No diceret vulputate sadipscing per, ne debet evertitur sit. Inani nusquam ut mel. Eos hinc civibus elaboraret et, cu iusto pertinax quo, ad nam tacimates adolescens mnesarchum. Sumo congue platonem mel at. Sed an putant principes, alii suscipiantur id quo. Cum eu alienum propriae postulant, eos option volutpat honestatis an.</font></div>
+ 	<div class = 'header'></div>
+	<div class = 'footer'></div>
+ </div>
+</body>
+</html>
